@@ -1,0 +1,38 @@
+:root {
+    --background-color: #3466AF;
+    --content-color: #21386E;
+    --text-color: #FFCB05;
+  }
+ 
+
+
+.pokemonCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+    background-color: var(--background-color);
+}
+
+.pokemonCard img{
+    max-width: 100%;
+    object-fit: scale-down;
+}
+
+.pokemonCard:hover{
+    outline: var(--text-color) solid 2px ;
+}
+
+.pokemonCard {
+    animation: 2s linear 0.1s card-flip ;
+}
+
+@keyframes card-flip {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
