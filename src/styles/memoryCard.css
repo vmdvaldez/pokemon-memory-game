@@ -25,7 +25,7 @@
 }
 
 .pokemonCard {
-    animation: 2s linear 0.1s card-flip ;
+    animation: 1s linear 0.1s card-flip;
 }
 
 @keyframes card-flip {
